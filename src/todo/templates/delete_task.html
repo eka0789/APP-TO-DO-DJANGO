@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous">
+  </script>
+
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous">
+</script>
+
+<style>
+	body{
+		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,138,47,1) 100%);
+	}
+	input{
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 15px;
+		box-sizing: border-box;
+	}
+	.container{
+		width:50%;
+		margin: 20px auto;
+		padding:20px;
+		background-color: #fff;
+		border-radius: 3px;
+		box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+	}
+	.myButton{
+		width:100%;
+	}
+	
+</style>
+
+<div class="container">
+
+	<b>Deleting "<span style="color: red;">{{item}}</span>" is parmanent... do you want to proceed?<br><br>
+
+	<a class="btn btn-sm btn-success myButton" href="{% url 'task_list' %}" >No</a><br><br>
+
+	<form method="POST" action="">{% csrf_token %}
+		<input class="btn btn-sm btn-danger" type="submit" value="Yes Delete" name="Yes">
+	</form>
+</div>
