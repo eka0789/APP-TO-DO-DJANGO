@@ -4,7 +4,14 @@ from .models import *
 
 class TaskForm(forms.ModelForm):
 	title= forms.CharField(widget= forms.TextInput(attrs={'placeholder':'Task title...'}), label=False)
-	due= forms.CharField(widget= forms.TextInput(attrs={'placeholder':'Due date...'}), label=False)
+	due= forms.DateTimeField(
+		widget= forms.DateTimeInput(attrs={
+			'placeholder':'Due date (YYYY-MM-DD HH:MM)...', 
+			'type': 'datetime-local'
+		}), 
+		label=False, 
+		required=False
+	)
 
 	class Meta:
 		model = task

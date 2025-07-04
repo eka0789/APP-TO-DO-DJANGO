@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from .models import *
 from .forms import *
@@ -19,7 +19,7 @@ def listTask(request):
 
 
 def updateTask(request, pk):
-	queryset = task.objects.get(id=pk)
+	queryset = get_object_or_404(task, id=pk)
 	form = UpdateForm(instance=queryset)
 	if request.method == 'POST':
 		form = UpdateForm(request.POST, instance=queryset)
@@ -35,7 +35,7 @@ def updateTask(request, pk):
 
 
 def deleteTask(request, pk):
-	queryset = task.objects.get(id=pk)
+	queryset = get_object_or_404(task, id=pk)
 	if request.method == 'POST':
 		queryset.delete()
 		return redirect('/')
