@@ -36,8 +36,8 @@ Sebelum menjalankan aplikasi, pastikan Anda memiliki:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/django-todo-app.git
-cd django-todo-app
+git clone https://github.com/eka0789/APP-TO-DO-DJANGO.git
+cd APP-TO-DO-DJANGO
 ```
 
 ### 2. Buat Virtual Environment
@@ -94,7 +94,7 @@ Aplikasi akan berjalan di `http://127.0.0.1:8000/`
 ## 📁 Struktur Proyek
 
 ```
-django-todo-app/
+APP-TO-DO-DJANGO/
 ├── src/
 │   ├── djangoproject/          # Konfigurasi utama Django
 │   │   ├── __init__.py
@@ -280,9 +280,9 @@ Project ini dilisensikan under MIT License - lihat file [LICENSE](LICENSE) untuk
 
 ## 👨‍💻 Author
 
-**Developer Name**
-- Email: your.email@example.com
-- GitHub: [@username](https://github.com/username)
+**Eka Wahyu Cahyono**
+- GitHub: [@eka0789](https://github.com/eka0789)
+- Repository: [APP-TO-DO-DJANGO](https://github.com/eka0789/APP-TO-DO-DJANGO)
 
 ## 🙏 Acknowledgments
 
@@ -295,9 +295,8 @@ Project ini dilisensikan under MIT License - lihat file [LICENSE](LICENSE) untuk
 
 Jika Anda mengalami masalah atau memiliki pertanyaan:
 
-1. Buat issue di GitHub repository
-2. Kirim email ke support@example.com
-3. Join Discord server: [link-discord]
+1. Buat issue di [GitHub repository](https://github.com/eka0789/APP-TO-DO-DJANGO/issues)
+2. Hubungi developer melalui GitHub: [@eka0789](https://github.com/eka0789)
 
 ---
 
